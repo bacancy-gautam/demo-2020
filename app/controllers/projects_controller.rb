@@ -10,6 +10,7 @@ class ProjectsController < ApplicationController
 
  
   def show
+    @project = Project.find(1)
   end
 
   # GET /projects/new
