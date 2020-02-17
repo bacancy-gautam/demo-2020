@@ -5,10 +5,10 @@ class ProjectsController < ApplicationController
   # GET /projects.json
   def index
     @projects = Project.all
+    @purchases = Purchase.all
   end
 
-  # GET /projects/1
-  # GET /projects/1.json
+ 
   def show
     @project = Project.find(1)
   end
