@@ -6,11 +6,12 @@ class ProjectsController < ApplicationController
   def index
     @projects = Project.all
     @users = User.all
+    @purchases = Purchase.all
   end
 
-  # GET /projects/1
-  # GET /projects/1.json
+ 
   def show
+    @project = Project.find(1)
   end
 
   # GET /projects/new

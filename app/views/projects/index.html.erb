@@ -7,8 +7,9 @@
     <tr>
       <th>Name</th>
       <th>Description</th>
-      <th>Start date</th>
       <th class="prj_end">End date</th>
+      <th>Start date</th>
+      <th>End date</th>
       <th>Status</th>
       <th colspan="4"></th>
     </tr>
@@ -20,12 +21,13 @@
         <td><%= project.name %></td>
         <td><%= project.description %></td>
         <td><%= project.start_date %></td>
-        <td><%= project.end_date %></td>
-        <td><%= project.status %></td>
         <td><%= link_to 'Show', project %></td>
         <td><%= link_to 'Edit', edit_project_path(project) %></td>
         <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <td><%= project.end_date %></td>
+        <td><%= project.status %></td>
+
+        </tr>
     <% end %>
   </tbody>
 </table>
